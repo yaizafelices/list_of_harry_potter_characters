@@ -1,0 +1,99 @@
+.detail{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 700px;
+    min-height: 60%;
+
+
+    @media all and (min-width: 768px) {
+        font-size: 25px;
+        grid-template-columns: 1fr;
+
+    }
+    &__link{
+        list-style-type: none;
+        color: aliceblue;
+        display: flex;
+        margin: 0 20px 10px;
+        gap:10px;
+        grid-column: 2/3;
+
+        @media all and (min-width: 768px) {
+            margin: 0 40px 10px;
+        }        
+    }
+
+    &__error{
+        color: white;
+        background-color: rgb(192, 17, 17);
+        font-size: 20px;
+        width: 300px;
+        margin-bottom: 400px;
+
+    }
+
+    &__card{
+        background-color: grey;
+        width: 300px;
+        height: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+
+        @media all and (min-width: 768px) {
+            width: 600px;
+            height: 300px;
+        }
+
+        &__Gryffindor{
+            background-color: rgb(112, 32, 32);
+        }
+        &__Slytherin{
+            background-color: rgb(16, 77, 24);
+        }
+        &__Hufflepuff{
+            background-color: rgb(214, 214, 44)
+        }
+        &__Ravenclaw{
+            background-color: rgb(19, 45, 129)
+        }
+
+
+        &-image{
+            height: 200px;
+            grid-column: 1/2;
+
+            @media all and (min-width: 768px) {
+                height: 280px;
+                width: 220px;
+    
+        }}
+        &-data{
+            grid-column: 2/3;
+        }
+    }
+ 
+}
+
+.icon{
+    &-return{
+        color: aliceblue;
+    }
+    &-alive{
+        color: red;
+    }
+    &-dead{
+        color: black;
+    }
+    &-genre{
+        color: rgb(7, 78, 78);
+    }
+    
+}
